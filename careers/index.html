@@ -1,0 +1,46 @@
+---
+layout: default
+body_class: careers
+---
+
+<section class="intro">
+  <hgroup>
+    <h1>Join our incredible team</h1>
+  </hgroup>
+</section>
+
+<section>
+  <div class="wrapper centered">
+    <p>
+      We believe that great people create great products (and happy clients). We’re small enough that each team member makes a difference, yet big enough to impact the online sampling industry. We focus on finding the right people and fostering an environment where you’re inspired to do great things.
+    </p> 
+  </div>
+</section>
+
+<section class="jobs">
+  <div class="wrapper">
+    <h2>Openings</h2>
+    <ul class="job-list">
+      {% for job in site.categories.careers reversed %}
+        <li class="job-item">
+          <a href="{{ job.url }}">          
+            <h3 class="job-title">{{ job.position }}</h3>
+            <p class="job-location">{{ job.location }}</p>
+          </a>
+        </li>
+      {% endfor %}
+      {% for i in (1..3) %}
+        <li class="job-placeholder"></li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="wrapper centered">
+    <h2>Thank You</h2>
+    <p>
+      We appreciate all applicants; however only those short-listed for an interview will be contacted. Federated Sample is an Equal Opportunity Employer.
+    </p>
+  </div>
+</section>

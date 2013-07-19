@@ -1,0 +1,32 @@
+.contact-us {
+  @extend %clearfix;
+
+  .locations,
+  .contact-form {
+    @extend .left;
+    @include box-sizing(border-box);
+  }
+
+  .locations {
+    width: 30%;
+    padding-left: 2em;
+  }
+
+  .contact-form {
+    width: 70%;
+    padding-right: 2em;
+  }
+
+  @media (max-width: 768px) {
+    .locations, .contact-form {
+      width: 100%;
+      float: none;
+      padding: 0;
+    }
+
+    .locations {
+      border-top: 1px solid #eee;
+    }
+  }
+
+}

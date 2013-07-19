@@ -1,0 +1,36 @@
+%btn {
+  @include inline-block;
+  @include border-radius(4px);
+  color: white;
+  text-align: center;
+  //text-transform: uppercase;
+  padding: 1em 2em;
+  min-width: 80px;
+  font-size: .85em;
+  line-height: 100%;
+  //font-weight: 600;
+  //letter-spacing: 1px;
+  border: none;
+  @include hardware-acceleration;
+  @include transition(all 150ms ease-in-out);
+}
+
+.btn {
+  @extend %btn;
+  background: lightgray;//$color-secondary;
+
+  &:active, &:hover {
+    color: white;
+    background: lighten($color-secondary, 2%);
+  }
+}
+
+.btn-primary {
+  @extend %btn;
+  background: $color-primary;
+
+  &:active, &:hover {
+    color: white;
+    background: lighten($color-primary, 2%);
+  }
+}

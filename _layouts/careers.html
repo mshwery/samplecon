@@ -1,0 +1,32 @@
+---
+layout: default
+body_class: careers
+---
+
+<section class="intro">
+  <hgroup>
+    <h1>Join our incredible team</h1>
+  </hgroup>
+</section>
+
+<section>
+  <div class="wrapper">
+    <div class="centered">
+      <h2>{{ page.position }}</h2>
+      <p class="job-location">{{ page.location }}</p>
+    </div>
+
+    <div class="job-description">
+      {{ content }}
+
+      <p>
+        If you're interested in joining our growing company, please send us your resume and cover letter to <a href="mailto:joinus@federatedsample.com?Subject={{ page.position | replace: ' ', '%20' }}">joinus@federatedsample.com</a>.
+      </p>
+    </div>
+  </div>
+
+  <div class="centered">
+    <a href="/careers" class="btn">Back to Careers</a>
+    <a href="mailto:joinus@federatedsample.com?Subject={{ page.position | replace: ' ', '%20' }}" class="btn">Apply</a>
+  </div>
+</section>

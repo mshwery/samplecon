@@ -1,0 +1,16 @@
+---
+layout: press
+body_class: press-releases dark
+---
+
+<h2>Press Releases</h2>
+<div class="press-release-list">
+  {% for pr in site.categories.press %}
+    <article>
+      <a href="{{ pr.url }}" class="press-release">
+        <time class="press-date" datetime="{{ pr.date | date: '%Y-%m-%d' }}">{{ pr.date | date: '%B %d, %Y' }}</time>
+        <h3>{{ pr.title }}</h3>
+      </a>
+    </article>
+  {% endfor %}
+</ul>

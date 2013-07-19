@@ -1,0 +1,116 @@
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('../fonts/proximanova-bold-webfont.eot');
+  src: url('../fonts/proximanova-bold-webfont.eot') format('embedded-opentype'),
+       url('../fonts/proximanova-bold-webfont.woff') format('woff'),
+       url('../fonts/proximanova-bold-webfont.ttf') format('truetype'),
+       url('../fonts/proximanova-bold-webfont.svg#../fonts/proximanova-bold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('../fonts/proximanova-semibold-webfont.eot');
+  src: url('../fonts/proximanova-semibold-webfont.eot') format('embedded-opentype'),
+       url('../fonts/proximanova-semibold-webfont.woff') format('woff'),
+       url('../fonts/proximanova-semibold-webfont.ttf') format('truetype'),
+       url('../fonts/proximanova-semibold-webfont.svg#../fonts/proximanova-semibold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('../fonts/proximanova-regular-webfont.eot');
+  src: url('../fonts/proximanova-regular-webfont.eot') format('embedded-opentype'),
+       url('../fonts/proximanova-regular-webfont.woff') format('woff'),
+       url('../fonts/proximanova-regular-webfont.ttf') format('truetype'),
+       url('../fonts/proximanova-regular-webfont.svg#../fonts/proximanova-regular') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Stag';
+  src: url('../fonts/stagweb-book.eot');
+  src: url('../fonts/stagweb-book.eot?#iefix') format('embedded-opentype'),
+     url('../fonts/stagweb-book.woff') format('woff'),
+     url('../fonts/stagweb-book.ttf') format('truetype'),
+     url('../fonts/stagweb-book.svg#stag-book') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fedicons';
+  src:url('../fonts/fedicons.eot');
+  src:url('../fonts/fedicons.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/fedicons.woff') format('woff'),
+    url('../fonts/fedicons.ttf') format('truetype'),
+    url('../fonts/fedicons.svg#fedicons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+  font-family: 'Fedicons';
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"] {
+*/
+.icon-external, .icon-linkedin, .icon-twitter, .icon-download, .icon-play, .icon-facebook, .icon-banknote, .icon-checkmark, .icon-paperplane, .icon-retweet, .icon-federated {
+  font-family: 'Fedicons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+.icon-external:before {
+  content: "\e000";
+}
+.icon-linkedin:before {
+  content: "\f0e1";
+}
+.icon-twitter:before {
+  content: "\f099";
+}
+.icon-download:before {
+  content: "\e002";
+}
+.icon-play:before {
+  content: "\e003";
+}
+.icon-facebook:before {
+  content: "\f09a";
+}
+.icon-banknote:before {
+  content: "\e001";
+}
+.icon-checkmark:before {
+  content: "\e004";
+}
+.icon-paperplane:before {
+  content: "\e005";
+}
+.icon-retweet:before {
+  content: "\f079";
+}
+.icon-federated:before {
+  content: "\e006";
+}

@@ -1,0 +1,22 @@
+name: Federated Sample
+permalink: /:categories/:title
+exclude:
+  - questions.txt
+  - config.ru
+  - Procfile
+  - Rakefile
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - gems
+  - unicorn.rb
+  - /_posts/team
+  - /_posts/careers
+assets:
+  compress:
+    css: sass
+    js: uglifier
+
+blog_url: http://blog.federatedsample.com/
+twitter_url: http://twitter.com/fedsample/
+facebook_url: http://www.facebook.com/FederatedSample

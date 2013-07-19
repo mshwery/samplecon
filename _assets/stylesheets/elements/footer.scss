@@ -1,0 +1,35 @@
+footer {
+  background-color: #222;
+  padding: 1em 0;
+  border-top: 1px solid black;
+  color: #aaa;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: .9em;
+
+  @media (max-width: $sidebarBreakpoint) {
+    .copyright { display: none; }
+  }
+
+  .wrapper {
+    padding: 0 1em;
+    width: $sidebarBreakpoint;
+  }
+
+  [class^='icon-'] {
+    font-size: 2em;
+  }
+
+  .copyright,
+  [class^='icon-'] {
+    vertical-align: middle;
+  } 
+
+  .newsletter-form {
+    margin: 0 1em;
+    @include inline-block(middle);
+    @extend .right;
+  }
+}

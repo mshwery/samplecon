@@ -1,0 +1,15 @@
+---
+layout: press
+body_class: press-releases dark
+---
+
+<article class="press-release-full">
+  <time class="press-date" datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%B %d, %Y' }}</time>
+  <h2>{{ page.title }}</h2>
+  
+  {{ content }}
+
+  {% if page.download %}
+    <a class="btn" href="/press/releases/{{ page.download }}">Download PDF</a>
+  {% endif %}
+</article>

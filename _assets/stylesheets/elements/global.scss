@@ -1,0 +1,266 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Source Sans Pro", "Proxima Nova", "Calibri", "Droid Sans", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  //font-weight: 300;
+  font-weight: 400;
+  font-size: 100%;
+  position: relative;
+
+  //min-height: 100%;
+  height: 100%;
+  color: #333;  
+}
+
+ol, ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+.container {
+  padding-bottom: $footerHeight;
+  width: 100%;
+  position: relative;
+  min-height: 100%;
+  background: white;
+  @include box-sizing(border-box);
+  @include transition(margin 150ms ease-in-out);
+}
+
+.wrapper {
+  max-width: 100%;
+  width: $wrapperWidth;
+  margin: 0 auto;
+  padding: 0 2em;
+  @include box-sizing(border-box);
+  
+  @media (max-width: 768px) { 
+    .title { font-size: 1.5em; }
+  }   
+  @media (max-width: 480px) {
+    padding: 0 1em;
+  }
+}
+
+h1, 
+h2, h3, h4, h6 {
+  text-transform: uppercase;
+  line-height: 1.25em;
+}
+
+h1 {
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+h2, h3 {
+  font-weight: 600;  
+  letter-spacing: 1px;
+}
+
+h4, h6 {
+  font-weight: 400;
+}
+
+h1 { font-size: 2.5em; }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.375em; }
+h4 { font-size: 1.25em; }
+h5 { font-size: 1em; }
+
+@media (max-width: 600px) {
+  h1 { font-size: 2em; }
+  h2 { font-size: 1.25em; }
+  h3 { font-size: 1.125em; }
+  h4 { font-size: 1em; }
+}
+
+@media (max-width: 400px) {
+  h1 { font-size: 1.5em; }
+  h2 { font-size: 1.125em; }
+  h3 { font-size: 1em; }
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+//  color: $color-primary;
+  color: $color-secondary;
+  border-bottom: 1px solid #eee;
+  border-color: rgba(0,0,0,0.1);
+  @include transition(all 150ms ease-in-out);
+
+  &:hover {
+//    color: #333;
+//    background-color: #fafafa;
+//    border-color: $color-primary;
+    border-color: $color-secondary;
+  }
+}
+
+section {
+  padding: 4em 0;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  
+  &:first-of-type {
+    border: none;
+  }
+
+  p {
+    font-size: 1.25em;
+    line-height: 1.5em;
+
+    @media (max-width: 400px) {
+      font-size: 1em;
+    }
+    margin: 0 0 1.5em;
+  }
+
+  hgroup {
+    max-width: 900px;
+    width: 90%;
+    margin: 0 auto;
+    
+    p {
+      margin: .5em 0;
+      font-size: 1.25em;
+    }
+  }
+
+  h1, h2 {
+    text-align: center;
+  }
+ 
+  h1 {
+    margin: .25em auto;
+  }
+
+  h2 {
+    margin: 1em auto;
+  }
+}
+
+.centered {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 640px;
+  max-width: 90%;
+}
+
+.intro {
+  position: relative;
+  padding: 8em 0 4em;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;  
+
+  @media (max-width: 960px) {
+    padding: 10em 0 8em;
+  }
+
+  @media (max-width: 600px) {
+    padding: 8em 0 6.5em;
+  }
+
+  @media (max-width: 480px) {
+    padding: 6em 0 5em;
+  }
+
+  h1 {
+    position: relative;
+    color: white;
+  }
+
+  p {
+    font-size: 1.5em;
+    font-weight: 300;
+
+    @media (max-width: 400px) {
+      font-size: 1em;
+    }
+  }
+}
+
+.bg-overlay, .map-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.bg-overlay {
+  background: rgba(0,0,0,0.3); 
+}
+
+.toggle-switch {
+  @include inline-block(middle);
+
+  a {  
+    @include inline-block;
+    @include border-radius(20px);
+    @include box-sizing(border-box);
+    padding: 10px 0;
+    width: 150px;
+    color: #333;
+    letter-spacing: 1px;
+    margin: .5em;
+    background: #fff;
+    text-transform: uppercase;
+
+    color: #333;
+    border-width: 0;
+  }
+
+  &.active, &:hover {
+    a {
+      color: white;
+    }
+  }
+
+  &.active a {
+    background: #ccc;
+  }
+
+  &:hover a {
+    background: #aaa;
+  }
+}
+
+.back-to-section {
+  color: #333;
+}
+
+.right-side, .left-side {
+  float: left;
+  width: 50%;
+  min-height: 300px;
+}
+
+section { @extend %clearfix; }
+
+.image-left {
+  padding-left: 50%;
+
+  @media (max-width: 600px) {
+    padding-left: 0;
+  }
+}

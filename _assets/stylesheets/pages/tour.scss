@@ -1,0 +1,111 @@
+$smokey-green: lighten(#e2f2db, 5%); //#efeaed;
+
+.tabs {
+  background: $smokey-green;
+  padding: 2em 0;
+}
+
+.fulcrum-components {
+  background: lighten($smokey-green, 2.5%);
+  border-top: none;
+}
+
+.tabs {
+  text-align: center;
+
+  span, a {
+    display: block;
+  }
+
+  img {
+    opacity: .75;
+    @include grayscale;
+    @include transition(all 200ms ease-in-out);
+  } 
+
+  span {
+    margin: 0.5em 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  li {
+    max-width: 200px;
+    width: 32%;
+    padding: 0 1em;
+    @include box-sizing(border-box);
+    @include inline-block(top);
+
+    &.active, &:hover {
+      a {
+        color: $color-primary;
+      }
+
+      img {
+        opacity: 1;
+        @include no-grayscale;
+      }
+    }
+  }
+
+  a {
+    color: #888;
+    border: none;
+  }
+}
+
+.tab-pane {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  @include transition(all 500ms ease-in-out);
+
+  &.active {
+    opacity: 1;
+    height: auto;
+  }
+}
+
+.fulcrum-component {
+  h3 {
+    margin-top: 0;
+  }
+
+  @extend %clearfix;
+}
+
+.component-details {
+  padding-right: 40%;
+}
+
+.benefits {
+  @extend .right;
+  @include box-sizing(border-box);
+  //@include border-radius(3px);
+  width: 30%;
+  padding-left: 2em;
+  font-size: .85em;
+  border-left: 1px solid #ddd;
+  //padding: 1.5em;
+  //color: white;
+  //background: $color-primary;
+
+  div {
+    margin-top: 2em;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+.benefit-title {
+  margin: 0;
+  font-weight: 600;
+  text-transform: none;
+}
+
+.benefit-description {
+  font-style: italic;
+  margin-bottom: 0;
+}

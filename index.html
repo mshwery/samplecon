@@ -1,0 +1,152 @@
+---
+layout: default
+body_class: home
+custom_js: pages/home
+---
+
+<section class="intro">
+  <div class="slider">
+    <ul class="slide-list">
+      <li class="slide-item">
+        <div class="table-cell">
+          <hgroup>
+            <h1>
+              Bringing Efficiency and Automation to Online Sampling
+            </h1>
+          </hgroup>
+        </div>
+      </li>
+      <li class="slide-item build-on-fulcrum">
+        <div class="table-cell">
+          <hgroup>
+            <h1>Market research's most innovative companies build their businesses on Fulcrum.</h1>
+          </hgroup>
+        </div>
+      </li>
+      <li class="slide-item">
+        <div class="table-cell">
+          <hgroup>
+            <h1>Fulcrum</h1>
+            <p>Today's most powerful, open, and customizable online sampling platform.</p>
+          </hgroup>
+        </div>
+      </li>      
+    </ul>
+  </div>
+</section>
+
+<section class="fulcrum-intro">
+  <div class="wrapper">
+    <div class="centered">
+      <img src="{{ 'fulcrum-logo.png' | asset_path }}" alt="Fulcrum logo"/>
+    </div>
+    <h2>Explore the best online sampling platform by Federated Sample</h2>
+    
+    <div class="product-intro">
+      <img src="/img/fulcrum-sample-optimizer.png" alt="Fulcrum Sample Optimizer logo">
+      <h3 class="product-title">Sample Optimizer</h3>
+      <p>
+        Fulcrum Sample Optimizer is a powerful sample delivery system that boosts performance and increases the value of your respondents. Leverage advanced algorithms to automatically deliver respondents across all your surveys.
+      </p>
+      <a href="#" class="learn-more">Learn more</a>
+    </div>
+
+    <div class="product-intro">
+      <img src="/img/fulcrum-field-manager.png" alt="Fulcrum Field Manager logo">
+      <h3 class="product-title">Field Manager</h3>
+      <p>
+        Fulcrum Field Manager is the smarter, more efficient way to manage projects. Tackle challenging research projects with complex quotas, highly-defined targeting requirements, and flexibly source sample you prefer.
+      </p>
+      <a href="#" class="learn-more">Learn more</a>
+    </div> 
+    
+    <div class="product-intro">
+      <img src="/img/fulcrum-sample-exchange.png" alt="Fulcrum Sample Exchange logo">
+      <h3 class="product-title">Sample Exchange</h3>
+      <p>
+        The most efficient way to buy & sell sample. Instant and cost-effective access to hundreds of panel sources globally. Reduce the effort needed to maximize delivery and improve sample costs while controlling sample sources.
+      </p>
+      <a href="#" class="learn-more">Learn more</a>
+    </div>       
+  </div>
+</section>
+
+<section class="data-quality">
+  <div class="wrapper">
+    <h2>Superior data quality & world-class security</h2>
+    <div class="image-left">
+      <h4>Data Quality Protocols</h4>
+      <ul>
+        <li>Cross-supplier deduplication across the platform</li>
+        <li>RelevantID® deduplication + Fraud Protection</li>
+        <li>Realtime validation with TrueSample™</li>
+        <li>Category participation exclusions standardized across system</li>
+        <li>Tracking exclusions via survey grouping</li>  
+      </ul>
+      <img src="/img/quality-protocols-logos.png" alt="RelevantID and TrueSample"/>
+    </div>
+  </div>
+</section>
+
+<section class="solutions-overview">
+  <div class="wrapper">
+    <hgroup class="centered">
+      <h2>Solutions</h2>
+      <p>Unbeatable results whether you license or use our service options.</p>
+    </hgroup>
+   
+    <div class="product-intro">
+      <img src="/img/solution-licensing.png" alt="Fulcrum licensing">
+      <h3 class="product-title">Fulcrum Licensing</h3>
+      <p>
+        Give your operations team full access to today's most powerful, open and customizable sampling technology.
+      </p>
+      <a href="#" class="learn-more">Learn more</a>
+    </div>
+
+    <div class="product-intro">
+      <img src="/img/solution-assisted-services.png" alt="Assisted Services">
+      <h3 class="product-title">Assisted Services</h3>
+      <p>
+        Retain control with operation reinforcement. Not ready to fully embrace Fulcrum on your own? We've got your back.
+      </p>
+      <a href="#" class="learn-more">Learn more</a>
+    </div> 
+    
+    <div class="product-intro">
+      <img src="/img/solution-managed-services.png" alt="Managed Services">
+      <h3 class="product-title">Managed Services</h3>
+      <p>
+        Remove the pain of project management – use our highly experienced and skilled project managers to steer even your most complex projects on Fulcrum.
+      </p>
+      <a href="#" class="learn-more">Learn more</a>
+    </div>   
+
+  </div>
+</section>
+
+<section class="recent-happenings">
+  <div class="wrapper">
+    
+    <div class="news-overview">
+      <h2>Recent News</h2>  
+
+      {% for pr in site.categories.press limit:2 %}
+      <article>
+        <a href="{{ pr.url }}" class="press-release">
+          <time class="press-date" datetime="{{ pr.date | date: '%Y-%m-%d' }}">{{ pr.date | date: '%B %d, %Y' }}</time>
+          <h3>{{ pr.title }}</h3>
+          {% if pr.content contains '<!--more-->' %}
+              {{ pr.content | split:'<!--more-->' | first }}
+          {% else %}
+              <!-- Case for when no excerpt is defined -->
+          {% endif %}
+
+          <span class="btn">Read More</span>
+        </a>
+      </article>
+      {% endfor %}
+    </div>
+  
+  </div>
+</section>
