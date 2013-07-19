@@ -1,0 +1,66 @@
+.solution-list {
+  text-align: center;
+}
+
+.solution-summary {
+  width: 30%;
+  @include inline-block(top);
+  margin: 0 1.25%;
+  @include border-radius(3px);
+  @include box-shadow(0 1px 5px rgba(0,0,0,0.5));
+
+  @media (max-width: 700px) {
+    width: 100%;
+    margin: 1em 0;
+  }
+
+  .reason-title {
+    text-align: center;
+  }
+
+  h5 {
+    margin-bottom: 0;
+  }
+
+  h6 {
+    color: #aaa;
+    margin-bottom: 0;
+  }
+  
+  p {
+    font-size: 1em;
+  }
+
+  li {
+    padding: .5em 10%;
+    border-top: 1px solid #eee;
+
+    &:first-child { border-top: 0; }
+  }
+}
+
+.solution-description h2 {
+  text-align: left;
+}
+
+.additional-info {
+  h3 {
+    color: $color-primary;
+  }
+  ul {
+    list-style: disc;
+    margin: 1em;
+    padding-left: 1.25em;
+  }
+}
+
+.two-column {
+  width: 49%;
+  @include box-sizing(border-box);
+  padding: 1em;
+  @include inline-block(top);
+
+  @media (max-width: 700px) {
+    width: 100%;
+  }
+}

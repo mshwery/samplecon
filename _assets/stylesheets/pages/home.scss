@@ -6,6 +6,10 @@
   float: left;
   width: 50%;
 
+  p {
+    font-size: 1em;
+  }
+
   @media (max-width: 600px) {
     float: none;
     width: auto;
