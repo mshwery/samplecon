@@ -16,6 +16,7 @@ use Rack::TryStatic,
     [["eot"],  {'Content-Type' => 'application/vnd.ms-fontobject'}],
     [["ttf"],  {'Content-Type' => 'application/x-font-ttf'}],
     [["svg"],  {'Content-Type' => 'image/svg+xml'}],
+    [["pdf"],   {'Content-Type' => 'application/pdf'}],
     ["/assets", {'Cache-Control' => 'public, max-age=31536000'}]
   ]
 
