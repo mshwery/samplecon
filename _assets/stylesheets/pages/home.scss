@@ -1,3 +1,11 @@
+.home header {
+  background: rgba(0,0,0,0.35); 
+
+  &.fixed {
+    background: rgba(0,0,0,0.65);
+  }
+}
+
 .recent-happenings {
   @extend %clearfix;
 }

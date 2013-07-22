@@ -22,9 +22,9 @@
 }
 
 .press-section {
-  margin-left: 200px;
-  border-left: 1px solid #eee;
-  padding: 0 4em;
+  //margin-left: 200px;
+  //border-left: 1px solid #eee;
+  padding: 0 4%;
 
   h2 {
     text-transform: none;
@@ -35,6 +35,12 @@
     margin: 0;
     width: 100%;
   }
+}
+
+.back-to-section {
+  padding: 1em 0;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 1em;
 }
 
 .press-coverage .press-coverage-link,

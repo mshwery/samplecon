@@ -75,34 +75,42 @@ $smokey-green: lighten(#e2f2db, 5%); //#efeaed;
 }
 
 .component-details {
-  padding-right: 40%;
-}
+  max-width: 60%;
+  @extend .left;
 
-.benefits {
-  @extend .right;
-  @include box-sizing(border-box);
-  //@include border-radius(3px);
-  width: 30%;
-  padding-left: 2em;
-  font-size: .85em;
-  border-left: 1px solid #ddd;
-  //padding: 1.5em;
-  //color: white;
-  //background: $color-primary;
-
-  div {
-    margin-top: 2em;
-
-    &:first-child {
-      margin-top: 0;
-    }
+  @media (max-width: 600px) {
+    padding-right: 0;
+    max-width: 100%;
   }
 }
 
+.benefits {
+  @include box-sizing(border-box);
+  margin-bottom: 2em;
+  padding: 1em;
+  background: #eee;
+  @include border-radius(3px);
+
+  ul {
+    margin-bottom: 2em;
+  }
+
+  li {
+    margin: 1em 1.45%;
+    @include inline-block(top);
+    width: 30%;
+  }
+}
+
+#sample-exchange .benefits li {
+  width: 100%;
+  margin: .5em 0;
+}
+
 .benefit-title {
-  margin: 0;
   font-weight: 600;
   text-transform: none;
+  text-align: center;
 }
 
 .benefit-description {
