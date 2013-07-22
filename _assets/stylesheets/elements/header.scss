@@ -73,7 +73,7 @@ header {
   left: 0;
   width: 100%;
   z-index: 100;
-  @include transition(all 150ms ease-in-out);
+  @include transition(all 200ms ease-in-out);
 
   &.fixed {
     background: #333;

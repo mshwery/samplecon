@@ -10,19 +10,23 @@ function scroll(target, id, dur) {
     'scrollTop': target
   }, dur, 'swing', function() {
     if (id) window.location.hash = id;
-  })
+  });
 };
 
 $(document).ready(function() {
   $('[data-toggle="tab"]').on('shown', function(e) {
+    var scroll = $(window).scrollTop() || 0;
+
     window.location.hash = $(e.target).attr("href");
-    e.preventDefault();
+    document.body.scrollTop = scroll;
   });
 
-  var a = (window.location.hash) ? $('[href=' + window.location.hash + ']') : $('[data-toggle="tab"]:first') ;
-  if (window.location.hash) {
-    a.tab('show');
-  }
+  setTimeout(function() {
+    var a = (window.location.hash) ? $('[href=' + window.location.hash + ']') : $('[data-toggle="tab"]:first') ;
+    if (window.location.hash) {
+      a.tab('show');
+    }    
+  }, 200);
 });
 
 Sidebar = {
