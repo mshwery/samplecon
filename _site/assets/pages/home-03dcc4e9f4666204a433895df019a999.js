@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".slider").unslider({dots:!0,delay:!1,fluid:!0,speed:300})});
