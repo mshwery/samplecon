@@ -1,15 +1,15 @@
 %btn {
   @include inline-block;
-  @include border-radius(4px);
+  @include border-radius(3px);
   color: white;
   text-align: center;
-  //text-transform: uppercase;
+  text-transform: uppercase;
   padding: 1em 2em;
   min-width: 80px;
   font-size: .9em;
   line-height: 100%;
   //font-weight: 600;
-  //letter-spacing: 1px;
+  letter-spacing: 1px;
   border: none;
   @include hardware-acceleration;
   @include transition(all 150ms ease-in-out);
@@ -44,5 +44,18 @@
   &:active, &:hover {
     color: white;
     background: lighten($color-primary, 2%);
+  }
+}
+
+.btn-info {
+  @extend %btn;
+  background: black;
+  border: 1px solid white;
+  opacity: .75;
+  margin: 2em 0 0;
+
+  &:hover {
+    opacity: 1;
+    border-color: white;
   }
 }

@@ -41,6 +41,7 @@
 
   .intro {
     padding: 10em 0;
+    color: white;
   }
 
   .intro, &.slide-item {
@@ -146,14 +147,17 @@
   }
 
   .intro .brand {
-    position: absolute;
-    top: 1em;
-    left: 1em;
+    background: rgba(0,0,0,0.65);
+    padding: 0 .5em;
     color: #fff;
     opacity: .9;
+    margin-bottom: 1em;
+    @include border-radius(2px);
+    border: 1px solid transparent;
 
     &:hover {
       opacity: 1;
+      border-color: white;
     }
   }
 
