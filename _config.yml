@@ -1,4 +1,4 @@
-name: Federated Sample
+name: SampleCon
 permalink: /:categories/:title
 exclude:
   - questions.txt
@@ -16,7 +16,4 @@ assets:
   compress:
     css: sass
     js: uglifier
-
-blog_url: http://blog.federatedsample.com/
-twitter_url: http://twitter.com/fedsample/
-facebook_url: http://www.facebook.com/FederatedSample
+twitter_url: http://twitter.com/fedsample/    
