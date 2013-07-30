@@ -1,4 +1,15 @@
 @font-face {
+  font-family: 'Stag';
+  src: url('../fonts/stagweb-book.eot');
+  src: url('../fonts/stagweb-book.eot?#iefix') format('embedded-opentype'),
+     url('../fonts/stagweb-book.woff') format('woff'),
+     url('../fonts/stagweb-book.ttf') format('truetype'),
+     url('../fonts/stagweb-book.svg#stag-book') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Proxima Nova';
   src: url('../fonts/proximanova-bold-webfont.eot');
   src: url('../fonts/proximanova-bold-webfont.eot') format('embedded-opentype'),
