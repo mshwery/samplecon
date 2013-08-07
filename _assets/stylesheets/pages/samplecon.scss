@@ -1,12 +1,12 @@
 .samplecon {
   font-family: 'Proxima Nova', 'Calibri', 'Helvetica Neue', arial, helvetica, sans-serif;
-
-  img {
-    display: block;
-  }
-  
+ 
   .container {
     padding-bottom: 0;
+  }
+
+  img {
+    vertical-align: middle;
   }
 
   .wrapper {
@@ -97,6 +97,13 @@
     @extend %clearfix;
   }
 
+  .sponsors {
+    img {
+      opacity: 0.75;
+      margin: 0 10px;
+    }
+  }
+
   .samplecon-details {
     @extend .right;
     min-width: 220px;
@@ -164,7 +171,7 @@
     border: none;
   }
 
-  .samplecon-details .brand {
+  .samplecon-summary .brand {
     color: #8bc63f;
     font-size: 20px;
     white-space: nowrap;
