@@ -5,7 +5,7 @@
 $("a").click(function(e) {
   var page = this.hash,
       target = $(page),
-      h = $('.navigation').outerHeight() - 2;
+      h = ($('body').width() >= 600) ? $('.navigation').outerHeight() - 2 : 0;
 
   if (target.length) {
     e.preventDefault();
