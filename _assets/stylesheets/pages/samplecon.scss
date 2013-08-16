@@ -10,7 +10,7 @@
   }
 
   .wrapper {
-    width: 1024px;
+    width: 1100px;
   }
 
   footer {
@@ -356,5 +356,33 @@
       text-transform: uppercase;
       color: $color-secondary;
     }
+  }
+}
+
+.attendee {
+  line-height: 30px;
+  @extend %clearfix;
+  text-align: right;
+
+  &:hover {
+    background: #eee;
+  }
+
+  span {
+    @include inline-block;
+  }
+
+  .attendee-name {
+    float: left;
+    margin: 0;
+  }
+
+  .attendee-location,
+  .attendee-company {
+    margin-left: 10px;
+  }
+
+  .attendee-location {
+    width: 150px;   
   }
 }
