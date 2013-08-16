@@ -364,6 +364,12 @@
   @extend %clearfix;
   text-align: right;
 
+  @media (max-width: 600px) {
+    text-align: left;
+    line-height: 20px;
+    margin: 15px 0;
+  }
+  
   &:hover {
     background: #eee;
   }
@@ -375,11 +381,22 @@
   .attendee-name {
     float: left;
     margin: 0;
+
+    @media (max-width: 600px) {
+      float: none;
+      display: block;
+    }
   }
 
   .attendee-location,
   .attendee-company {
     margin-left: 10px;
+    @media (max-width: 600px) {
+      margin-left: 0px;
+      margin-right: 10px;
+      color: #aaa;
+      line-height: 100%;
+    }
   }
 
   .attendee-location {
