@@ -130,6 +130,12 @@
     }
   }
 
+  .session-title {
+    text-transform: none;
+    border-bottom: 1px solid #ddd;
+    @include inline-block;
+  }
+
   .samplecon-description {
     font-size: 18px;
     font-weight: 300;
@@ -188,9 +194,18 @@
     font-size: 22px;
     font-weight: 300;
     line-height: 30px;
+    margin-bottom: 0;
 
     @media (max-width: 600px) {
       font-size: 18px;
+    }
+  }
+
+  .schedule-description {
+    float: left;
+
+    @media (max-width: 600px) {
+      float: none;
     }
   }
 
@@ -206,15 +221,48 @@
     &:hover {
       background: #f5f5f5;
     }
+
+    ul {
+      margin-left: 10px;
+    }
+
+    li {
+      padding: 3px 0;
+      @extend %clearfix;
+    
+      .schedule-description {
+        font-size: 16px;
+      }
+
+      &:hover {
+        background: white;
+      }
+    }
   }
 
   .schedule-time {
     @extend .left;   
   }
 
-  .schedule-description {
+  .schedule-location {
+    @extend .right;
+    margin: 0;
+    text-align: right;
+
+    @media (max-width: 600px) {
+      float: none;
+      text-align: left;
+    }
+
+    .address {
+      color: #aaa;
+      display: block;
+    }
+  }
+
+  .schedule-description-block {
     margin-left: 120px;
-    margin-bottom: 0;
+    @extend %clearfix;
 
     @media (max-width: 600px) {
       margin-left: 80px;
