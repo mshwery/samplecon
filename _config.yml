@@ -16,7 +16,7 @@ assets:
   compress:
     css: sass
     js: uglifier
-twitter_url: http://twitter.com/fedsample/   
+twitter_url: http://twitter.com/fedsample/
 register_url: http://samplecon.brownpapertickets.com/
 
 attendees:
