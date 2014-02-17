@@ -10,11 +10,11 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>{% if page.title %} {{ page.title }} |{% endif %} {{ site.name }}</title>
-
+    <link href="/favicon.ico" rel="icon">
     {% stylesheet app %}
     {% javascript vendor/modernizr %}
   </head>
-  
+
   {% capture body_class %}{% if page.body_class %}{{ page.body_class }}{% endif %}{% endcapture %}
   <body class="{{ body_class }}">
     <!--[if lt IE 7]>
@@ -28,6 +28,6 @@
 
     {% include ga.html %}
     {% javascript app %}
-  
+
   </body>
 </html>

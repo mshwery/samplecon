@@ -1,0 +1,21 @@
+.samplecon-2014 {
+  .container {
+    background: #222;
+  }
+
+  .intro {
+    padding: 14em 0;
+    background-image: url(/img/samplecon/neworleans-at-night-blur.jpg);
+  }
+
+  .intro .brand,
+  .samplecon-logo {
+    background: rgba(0,0,0,0.25);
+    background: none;
+    text-shadow: 0 1px 4px #000;
+  }
+
+  footer {
+    padding: 1em 0;
+  }
+}

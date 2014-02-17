@@ -1,6 +1,6 @@
 .samplecon {
   font-family: 'Proxima Nova', 'Calibri', 'Helvetica Neue', arial, helvetica, sans-serif;
- 
+
   .container {
     padding-bottom: 0;
   }
@@ -14,7 +14,7 @@
   }
 
   footer {
-    position: static;  
+    position: static;
     text-align: center;
     font-weight: 300;
 
@@ -126,7 +126,7 @@
 
     @media (max-width: 480px) {
       float: none;
-      margin-left: 0;     
+      margin-left: 0;
     }
   }
 
@@ -229,7 +229,7 @@
     li {
       padding: 3px 0;
       @extend %clearfix;
-    
+
       .schedule-description {
         font-size: 16px;
       }
@@ -241,7 +241,7 @@
   }
 
   .schedule-time {
-    @extend .left;   
+    @extend .left;
   }
 
   .schedule-location {
@@ -385,11 +385,11 @@
         @include box-shadow(0 1px 3px rgba(0,0,0,0.25));
       }
 
-      a { 
+      a {
         display: block;
         color: #333;
-        border: none; 
-        
+        border: none;
+
         &:hover {
           color: $color-secondary;
         }
@@ -421,7 +421,7 @@
     line-height: 20px;
     margin: 15px 0;
   }
-  
+
   &:hover {
     background: #eee;
   }
@@ -452,6 +452,6 @@
   }
 
   .attendee-location {
-    width: 150px;   
+    width: 150px;
   }
 }
