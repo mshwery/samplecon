@@ -4,8 +4,12 @@
   }
 
   .intro {
-    padding: 14em 0;
+    padding: 12em 0;
     background-image: url(/img/samplecon/neworleans-at-night-blur.jpg);
+
+    a {
+      @extend .btn-info;
+    }
   }
 
   .intro .brand,
