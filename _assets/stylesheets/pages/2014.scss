@@ -37,10 +37,19 @@
   .samplecon-logo {
     background: rgb(254,123,15);
     padding: .5em 3em;
+
+    @media screen and (max-width: 400px) {
+      padding-left: 1em;
+      padding-right: 1em;
+    }
   }
 
   .samplecon-title {
     font-size: 54px;
+
+    @media screen and (max-width: 400px) {
+      font-size: 42px;
+    }
   }
 
   .samplecon-dates {
